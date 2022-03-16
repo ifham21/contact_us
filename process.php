@@ -9,21 +9,21 @@
 
        if(empty($UserName) || empty($Email) || empty($Subject) || empty($Msg))
        {
-           header('location:index.php?error');
+           header('location:index.html?error');
        }
        else
        {
-           $to = "admin@onlineittuts.com";
+           $to = "ai0287906@gmail.com";
 
            if(mail($to,$Subject,$Msg,$Email))
            {
-               header("location:index.php?success");
+               header("location:index.html?success");
            }
        }
     }
     else
     {
-        header("location:index.php");
+        header("location:index.html");
     }
 
 
